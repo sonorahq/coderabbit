@@ -6,6 +6,12 @@ reviews:
   high_level_summary_in_walkthrough: true
   high_level_summary_instructions: "Summarize the change in at most two short sentences."
   review_status: false
+  # CodeRabbit cancels its review when a pull request merges before it finishes, and GitHub
+  # shows that cancelled check as a failure. On GitHub the `CodeRabbit` check run comes from
+  # review_progress and the commit status from commit_status, so both stay off. Reviews still
+  # arrive as comments.
+  review_progress: false
+  commit_status: false
   review_info: false
   review_details: false
   changed_files_summary: false
